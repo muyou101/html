@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>曼波波波</title>
+</head>
+<body>
+    <div id="app" @click="myClick" @contextmenu.prevent="myRightClick">{{msg}}</div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                msg: '你好,点一下文字'
+            },
+            methods:{
+                myClick(){
+                    alert('点击了，就这样')
+                }
+            }
+        })
+    </script>
+</body>
+</html>
